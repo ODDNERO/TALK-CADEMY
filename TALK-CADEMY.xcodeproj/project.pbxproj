@@ -12,6 +12,7 @@
 		CE5107692C4940A90055128E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5107682C4940A90055128E /* Assets.xcassets */; };
 		CE51076C2C4940A90055128E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE51076B2C4940A90055128E /* Base */; };
 		CE5107742C4B82070055128E /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5107732C4B82060055128E /* ChatListViewController.swift */; };
+		CE5107792C4B8ECB0055128E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE5107782C4B8ECB0055128E /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5107792C4B8ECB0055128E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = "TALK-CADEMY";
+			packageProductDependencies = (
+				CE5107782C4B8ECB0055128E /* SnapKit */,
+			);
 			productName = "TALK-CADEMY";
 			productReference = CE51075C2C4940A60055128E /* TALK-CADEMY.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = CE5107532C4940A60055128E;
+			packageReferences = (
+				CE5107772C4B8ECB0055128E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CE51075D2C4940A60055128E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE5107772C4B8ECB0055128E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE5107782C4B8ECB0055128E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE5107772C4B8ECB0055128E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE5107542C4940A60055128E /* Project object */;
 }
