@@ -7,7 +7,15 @@
 
 import UIKit
 
-class ChatListViewController: UIViewController {
+struct ChatInfo: Hashable, Identifiable {
+    let id = UUID()
+    let user: String
+    let profile: UIImage
+    let message: String
+    let date: Date
+}
+
+final class ChatListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
